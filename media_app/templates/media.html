@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media_app</title>
+</head>
+<body>
+    <h1>media 실습입니다.</h1>
+    {% for media in medias.all %}
+        <p>title : {{media.title}}</p>
+        <p>image : <img src="{{ media.image.url }}" alt="사진불러오기 실패"></p>
+        <p>description : {{media.description}}</p>
+    {% endfor %}
+    <a href="{% url 'home' %}">home으로 돌아가기</a>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image_project</title>
+</head>
+<body>
+    <h1>static 실습입니다.</h1>
+    <img src="{% static 'img/black.png' %}" alt="사진 불러오기 실패">
+    <a href="{% url 'media' %}">media 페이지로 이동하기</a>
+</body>
+</html>
